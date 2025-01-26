@@ -1,0 +1,18 @@
+[project]
+name = "glmutils"
+version = "0.1.0"
+description ="This is package to provide some usefull tools for Generalized Linear Models." 
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.24.4",
+    "polars>=1.8.2",
+    "scikit-learn>=1.3.2",
+]
+
+[project.scripts]
+glmutils = "glmutils:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
